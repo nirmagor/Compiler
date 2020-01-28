@@ -1,0 +1,22 @@
+picki23,ruti
+nir magor, ID 312582638, nir.magor@mail.huji.ac.il
+ruti popilov, ID 312325848, ruti.popilov@mail.huji.ac.il
+
+ ==============================================
+project 10: the jack compiler 
+ ==============================================
+
+ ********************
+ = submitted files: =
+ ********************
+ JackAnalizer.py - recives jack files and translates them into xlm files.
+ JackTokenizer.py - prosceses the lines and divides parts to proper tokens.
+ CompilationEngine.py - comiles each segment part according to its pourpse.
+ Makefile - abels you to type make and the commands in the makefile will be executed.
+
+ ************************
+ = project description: =
+ ************************
+building the compiler's front-end. this project is about syntax analysis.
+In this project we build a syntax analyzer that parses Jack programs according to the Jack grammar,
+producing an XML file that renders the program's structure using marked-up text.
