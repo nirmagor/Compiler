@@ -17,13 +17,16 @@ class JackTokenizer:
                    '|', '<', '>', '=', '~'}
 
     def __init__(self, inputFile):
+        self.inputPath = inputFile
+        self.file = open(inputFile, 'r')
+        self.lines = self.file.readlines()
+        self.file.close()
         # self.findEndBlock = False
         self.inStringFlag = False
         self.inCommentFlag = False
         self.dontGetIn = False
 
         self.tokens = list()
-        self.lines = inputFile
         self.goThroughLines()
         self.currIndex = 0
         self.token = self.tokens[self.currIndex]
